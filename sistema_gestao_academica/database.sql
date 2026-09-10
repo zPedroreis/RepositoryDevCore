@@ -273,7 +273,7 @@ INSERT INTO usuarios(cpf,nome,email,senha_hash,perfil) VALUES
 
 INSERT INTO instrutores(usuario_id,cpf,area,email)
 SELECT id,cpf,'Docência',email FROM usuarios WHERE cpf IN
-('222.222.222-22','333.333.333-33','444.444.444-44','555.555.555-55','666.666.666-66','777.777.777-77');
+('111.111.111-11');
 
 INSERT INTO turma_disciplinas(turma_id,disciplina_id,instrutor_id,carga_horaria)
 SELECT t.id,d.id,i.id,d.carga_horaria
